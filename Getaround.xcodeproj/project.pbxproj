@@ -23,12 +23,16 @@
 		81F442AE27DB2B5400EDAADC /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F442AD27DB2B5400EDAADC /* StackView.swift */; };
 		81F442B027DB2CDB00EDAADC /* CarListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F442AF27DB2CDB00EDAADC /* CarListSection.swift */; };
 		81F442B427DB2F1600EDAADC /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F442B327DB2F1600EDAADC /* Alert.swift */; };
+		81F442B727DB35A400EDAADC /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F442B627DB35A400EDAADC /* CarDetailsViewController.swift */; };
+		81F442B927DB376800EDAADC /* CarDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F442B827DB376800EDAADC /* CarDetailsView.swift */; };
+		81F442BB27DB3AF800EDAADC /* OwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F442BA27DB3AF800EDAADC /* OwnerView.swift */; };
+		81F442BD27DB45F800EDAADC /* SeparatorLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F442BC27DB45F800EDAADC /* SeparatorLineView.swift */; };
+		81F442BF27DB4C8400EDAADC /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F442BE27DB4C8400EDAADC /* Images.swift */; };
+		81F442C127DB4DAC00EDAADC /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F442C027DB4DAC00EDAADC /* Label.swift */; };
 		81F8D66827DA138F00894748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8D66727DA138F00894748 /* AppDelegate.swift */; };
 		81F8D66A27DA138F00894748 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8D66927DA138F00894748 /* SceneDelegate.swift */; };
 		81F8D66C27DA138F00894748 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8D66B27DA138F00894748 /* CarListViewController.swift */; };
 		81F8D67127DA139100894748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F8D67027DA139100894748 /* Assets.xcassets */; };
-		81F8D68927DA139100894748 /* GetaroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8D68827DA139100894748 /* GetaroundUITests.swift */; };
-		81F8D68B27DA139200894748 /* GetaroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8D68A27DA139200894748 /* GetaroundUITestsLaunchTests.swift */; };
 		81F8D6A027DA161400894748 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8D69F27DA161400894748 /* Factory.swift */; };
 		81F8D6A227DA164000894748 /* ViewControllerMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8D6A127DA164000894748 /* ViewControllerMaker.swift */; };
 		81F8D6A427DA16EB00894748 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8D6A327DA16EB00894748 /* Car.swift */; };
@@ -54,13 +58,6 @@
 			remoteGlobalIDString = 81F8D66327DA138F00894748;
 			remoteInfo = Getaround;
 		};
-		81F8D68527DA139100894748 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 81F8D65C27DA138F00894748 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 81F8D66327DA138F00894748;
-			remoteInfo = Getaround;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +76,12 @@
 		81F442AD27DB2B5400EDAADC /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		81F442AF27DB2CDB00EDAADC /* CarListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListSection.swift; sourceTree = "<group>"; };
 		81F442B327DB2F1600EDAADC /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		81F442B627DB35A400EDAADC /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
+		81F442B827DB376800EDAADC /* CarDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsView.swift; sourceTree = "<group>"; };
+		81F442BA27DB3AF800EDAADC /* OwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerView.swift; sourceTree = "<group>"; };
+		81F442BC27DB45F800EDAADC /* SeparatorLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorLineView.swift; sourceTree = "<group>"; };
+		81F442BE27DB4C8400EDAADC /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		81F442C027DB4DAC00EDAADC /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		81F8D66427DA138F00894748 /* Getaround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getaround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F8D66727DA138F00894748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F8D66927DA138F00894748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +90,6 @@
 		81F8D67327DA139100894748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81F8D67527DA139100894748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F8D67A27DA139100894748 /* GetaroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetaroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		81F8D68427DA139100894748 /* GetaroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetaroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F8D68827DA139100894748 /* GetaroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetaroundUITests.swift; sourceTree = "<group>"; };
 		81F8D68A27DA139200894748 /* GetaroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetaroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		81F8D69F27DA161400894748 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
@@ -122,13 +124,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81F8D68127DA139100894748 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -144,12 +139,15 @@
 		81F4429A27DAFE3700EDAADC /* ReusableElements */ = {
 			isa = PBXGroup;
 			children = (
-				81F4428F27DA85DA00EDAADC /* StarRatingView.swift */,
+				81F442AD27DB2B5400EDAADC /* StackView.swift */,
+				81F442C027DB4DAC00EDAADC /* Label.swift */,
 				81F4429327DAFBEC00EDAADC /* ImageView.swift */,
+				81F442BC27DB45F800EDAADC /* SeparatorLineView.swift */,
+				81F4428F27DA85DA00EDAADC /* StarRatingView.swift */,
 				81F8D6BB27DA53EB00894748 /* CarInfoView.swift */,
 				81F4429127DA886500EDAADC /* RatingView.swift */,
 				81F442AB27DB236200EDAADC /* EmptyStateView.swift */,
-				81F442AD27DB2B5400EDAADC /* StackView.swift */,
+				81F442BA27DB3AF800EDAADC /* OwnerView.swift */,
 			);
 			path = ReusableElements;
 			sourceTree = "<group>";
@@ -204,8 +202,17 @@
 			isa = PBXGroup;
 			children = (
 				81F442B327DB2F1600EDAADC /* Alert.swift */,
+				81F442BE27DB4C8400EDAADC /* Images.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		81F442B527DB358100EDAADC /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+				81F442B627DB35A400EDAADC /* CarDetailsViewController.swift */,
+			);
+			path = CarDetails;
 			sourceTree = "<group>";
 		};
 		81F8D65B27DA138F00894748 = {
@@ -223,7 +230,6 @@
 			children = (
 				81F8D66427DA138F00894748 /* Getaround.app */,
 				81F8D67A27DA139100894748 /* GetaroundTests.xctest */,
-				81F8D68427DA139100894748 /* GetaroundUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,6 +293,7 @@
 				81F8D67227DA139100894748 /* LaunchScreen.storyboard */,
 				81F4429B27DAFE4800EDAADC /* Cell */,
 				81F4429A27DAFE3700EDAADC /* ReusableElements */,
+				81F442B827DB376800EDAADC /* CarDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				81F442B127DB2CF800EDAADC /* CarList */,
+				81F442B527DB358100EDAADC /* CarDetails */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -388,24 +396,6 @@
 			productReference = 81F8D67A27DA139100894748 /* GetaroundTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		81F8D68327DA139100894748 /* GetaroundUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 81F8D69427DA139200894748 /* Build configuration list for PBXNativeTarget "GetaroundUITests" */;
-			buildPhases = (
-				81F8D68027DA139100894748 /* Sources */,
-				81F8D68127DA139100894748 /* Frameworks */,
-				81F8D68227DA139100894748 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				81F8D68627DA139100894748 /* PBXTargetDependency */,
-			);
-			name = GetaroundUITests;
-			productName = GetaroundUITests;
-			productReference = 81F8D68427DA139100894748 /* GetaroundUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -422,10 +412,6 @@
 					81F8D67927DA139100894748 = {
 						CreatedOnToolsVersion = 13.2;
 						LastSwiftMigration = 1320;
-						TestTargetID = 81F8D66327DA138F00894748;
-					};
-					81F8D68327DA139100894748 = {
-						CreatedOnToolsVersion = 13.2;
 						TestTargetID = 81F8D66327DA138F00894748;
 					};
 				};
@@ -448,7 +434,6 @@
 			targets = (
 				81F8D66327DA138F00894748 /* Getaround */,
 				81F8D67927DA139100894748 /* GetaroundTests */,
-				81F8D68327DA139100894748 /* GetaroundUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -468,13 +453,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F8D6C127DA57CA00894748 /* FakeCarData.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		81F8D68227DA139100894748 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,10 +486,14 @@
 			files = (
 				81F4429727DAFD7200EDAADC /* UILabel+Extension.swift in Sources */,
 				81F4429227DA886500EDAADC /* RatingView.swift in Sources */,
+				81F442B727DB35A400EDAADC /* CarDetailsViewController.swift in Sources */,
 				81F8D6A027DA161400894748 /* Factory.swift in Sources */,
+				81F442BB27DB3AF800EDAADC /* OwnerView.swift in Sources */,
 				81F4429927DAFD8300EDAADC /* Int+Extension.swift in Sources */,
 				81F8D6A227DA164000894748 /* ViewControllerMaker.swift in Sources */,
+				81F442BF27DB4C8400EDAADC /* Images.swift in Sources */,
 				81F442AE27DB2B5400EDAADC /* StackView.swift in Sources */,
+				81F442BD27DB45F800EDAADC /* SeparatorLineView.swift in Sources */,
 				81F442B027DB2CDB00EDAADC /* CarListSection.swift in Sources */,
 				81F8D6B127DA20AE00894748 /* CarListTableViewCell.swift in Sources */,
 				81F442A027DB129000EDAADC /* CarListPresenterView.swift in Sources */,
@@ -519,6 +501,7 @@
 				81F8D6A627DA170A00894748 /* Owner.swift in Sources */,
 				81F442B427DB2F1600EDAADC /* Alert.swift in Sources */,
 				81F8D6A427DA16EB00894748 /* Car.swift in Sources */,
+				81F442C127DB4DAC00EDAADC /* Label.swift in Sources */,
 				81F442AC27DB236200EDAADC /* EmptyStateView.swift in Sources */,
 				81F8D6A827DA172400894748 /* Rating.swift in Sources */,
 				81F4429427DAFBEC00EDAADC /* ImageView.swift in Sources */,
@@ -527,6 +510,7 @@
 				81F8D6AC27DA1C5A00894748 /* ApiService.swift in Sources */,
 				81F8D66C27DA138F00894748 /* CarListViewController.swift in Sources */,
 				81F8D6B327DA3C4400894748 /* NetworkError.swift in Sources */,
+				81F442B927DB376800EDAADC /* CarDetailsView.swift in Sources */,
 				81F8D6BC27DA53EB00894748 /* CarInfoView.swift in Sources */,
 				81F8D66827DA138F00894748 /* AppDelegate.swift in Sources */,
 				81F8D66A27DA138F00894748 /* SceneDelegate.swift in Sources */,
@@ -547,15 +531,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81F8D68027DA139100894748 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81F8D68B27DA139200894748 /* GetaroundUITestsLaunchTests.swift in Sources */,
-				81F8D68927DA139100894748 /* GetaroundUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -563,11 +538,6 @@
 			isa = PBXTargetDependency;
 			target = 81F8D66327DA138F00894748 /* Getaround */;
 			targetProxy = 81F8D67B27DA139100894748 /* PBXContainerItemProxy */;
-		};
-		81F8D68627DA139100894748 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 81F8D66327DA138F00894748 /* Getaround */;
-			targetProxy = 81F8D68527DA139100894748 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -812,42 +782,6 @@
 			};
 			name = Release;
 		};
-		81F8D69527DA139200894748 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LW66PFZQH6;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.birkyboy.GetaroundUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Getaround;
-			};
-			name = Debug;
-		};
-		81F8D69627DA139200894748 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LW66PFZQH6;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.birkyboy.GetaroundUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Getaround;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -874,15 +808,6 @@
 			buildConfigurations = (
 				81F8D69227DA139200894748 /* Debug */,
 				81F8D69327DA139200894748 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		81F8D69427DA139200894748 /* Build configuration list for PBXNativeTarget "GetaroundUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				81F8D69527DA139200894748 /* Debug */,
-				81F8D69627DA139200894748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

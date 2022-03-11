@@ -21,9 +21,9 @@ class ImageView: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    convenience init(defaultImageName: String) {
+    convenience init(defaultImage: UIImage) {
         self.init(frame: .zero)
-        self.image = UIImage(named: defaultImageName)
+        self.image = defaultImage
     }
 
     func configure(with url: URL) {

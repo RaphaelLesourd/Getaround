@@ -9,4 +9,5 @@ import UIKit
 
 protocol Factory {
     func makeCarListViewController() -> UIViewController
+    func makeCarDetailsViewController(with car: Car) -> UIViewController
 }

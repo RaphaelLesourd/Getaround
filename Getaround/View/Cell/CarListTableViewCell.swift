@@ -33,7 +33,7 @@ class CarListTableViewCell: UITableViewCell {
     }
 
     // MARK: Subviews
-    private let carImageView = ImageView(defaultImageName: "CellEmptyStateImage")
+    private let carImageView = ImageView(defaultImage: Images.Default.carImage)
     private let carDetailView = CarInfoView()
     private let carRatingView = RatingView()
     private let mainStackView = StackView(axis: .vertical, spacing: 10)
@@ -49,6 +49,7 @@ class CarListTableViewCell: UITableViewCell {
 
     private func setupView() {
         contentView.backgroundColor = .secondarySystemBackground
+        self.backgroundColor = .clear
         mainStackView.addArrangedSubview(carDetailView)
         mainStackView.addArrangedSubview(carRatingView)
     }

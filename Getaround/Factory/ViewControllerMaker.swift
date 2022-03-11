@@ -14,8 +14,14 @@ class ViewControllerMaker {
 }
 
 extension ViewControllerMaker: Factory {
+    
     func makeCarListViewController() -> UIViewController {
         return CarListViewController(presenter: carListPresenter,
-                                     carDataSource: carDataSource)
+                                     carDataSource: carDataSource,
+                                     factory: self)
+    }
+
+    func makeCarDetailsViewController(with car: Car) -> UIViewController {
+        return CarDetailsViewController(car: car)
     }
 }

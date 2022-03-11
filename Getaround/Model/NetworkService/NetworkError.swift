@@ -15,7 +15,7 @@ extension NetworkError {
     var description: String {
         switch self {
         case .dataError:
-            return "Error retrieving car information"
+            return "Error retrieving cars"
         case .responseError:
             return "No response from server"
         case .decodingData:

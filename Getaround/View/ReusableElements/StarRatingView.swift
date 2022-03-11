@@ -15,7 +15,7 @@ enum StarType: String {
     case filledStar = "star.fill"
     /* allows tinting */
     var toImage: UIImage {
-        return UIImage(systemName: self.rawValue)!
+        return UIImage(named: self.rawValue)!
     }
 }
 
@@ -123,7 +123,6 @@ extension StarRatingView {
         stackView.distribution = .fillEqually
         stackView.axis = .horizontal
         stackView.spacing = 1
-
         return stackView
     }
 

@@ -23,15 +23,10 @@ class EmptyStateView: UIView {
         messageLabel.text = message
     }
 
-    private let messageLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .white
-        label.textAlignment = .center
-        label.numberOfLines = 5
-        label.font = UIFont.systemFont(ofSize: 14, weight: .medium)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    private let messageLabel = Label(color: .white,
+                                     maxLines: 5,
+                                     alignment: .center,
+                                     font: UIFont.systemFont(ofSize: 14, weight: .medium))
 
     // MARK: Setup
     private func setupView() {
@@ -44,6 +39,7 @@ class EmptyStateView: UIView {
 extension EmptyStateView {
     private func setLabelContraints() {
         addSubview(messageLabel)
+        messageLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),
             messageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),

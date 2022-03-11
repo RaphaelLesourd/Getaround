@@ -20,35 +20,26 @@ class CarInfoView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private let carLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .label
-        label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
-        label.numberOfLines = 2
-        label.textAlignment = .left
-        return label
-    }()
+    private let carLabel = Label(maxLines: 1,
+                                 font: UIFont.systemFont(ofSize: 21, weight: .semibold))
 
-    private let rentalPriceLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .systemPurple
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        label.numberOfLines = 1
-        label.textAlignment = .right
-        return label
-    }()
+    private let rentalPriceLabel = Label(color: .systemPurple,
+                                         alignment: .right,
+                                         font: UIFont.systemFont(ofSize: 21, weight: .bold))
 
-    private let carInfoStackView = StackView(axis: .horizontal, alignment: .top, spacing: 10)
+    private let carInfoStackView = StackView(axis: .horizontal,
+                                             alignment: .top,
+                                             spacing: 10)
 
     // MARK: Configure
     func configure(with car: Car) {
-        carLabel.text = "\(car.brand)\n\(car.model)"
+        carLabel.text = "\(car.brand) \(car.model)"
 
         let rentalRangeLength = "/day"
         let pricePerDay = car.pricePerDay.convertToCurrency()
         rentalPriceLabel.setSpannedfont(fullText: "\(pricePerDay)\(rentalRangeLength)",
                                         changeText:  rentalRangeLength,
-                                        fontSize: 14)
+                                        fontSize: 16)
     }
 }
 // MARK: Constraints

@@ -6,15 +6,26 @@
 //
 
 import UIKit
+import Kingfisher
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        kingFisherCacheSetup()
         return true
     }
+
+    /// Setup Kingfisher cache
+        private func kingFisherCacheSetup() {
+            let cache = ImageCache.default
+            cache.memoryStorage.config.countLimit = 150
+            cache.memoryStorage.config.totalCostLimit = 500 * 1024 * 1024
+            cache.diskStorage.config.sizeLimit = 1000 * 1024 * 1024
+            KingfisherManager.shared.downloader.downloadTimeout = 3000.0
+        }
 
     // MARK: UISceneSession Lifecycle
 

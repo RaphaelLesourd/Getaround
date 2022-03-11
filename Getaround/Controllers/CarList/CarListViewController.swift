@@ -18,12 +18,15 @@ class CarListViewController: UITableViewController {
 
     private let presenter: CarListPresenter
     private let carDataSource: CarListDataSource
+    private let factory: Factory
 
     // MARK: Initializer
     init(presenter: CarListPresenter,
-         carDataSource: CarListDataSource) {
+         carDataSource: CarListDataSource,
+         factory: Factory) {
         self.presenter = presenter
         self.carDataSource = carDataSource
+        self.factory = factory
         super.init(style: .plain)
     }
 
@@ -48,7 +51,7 @@ class CarListViewController: UITableViewController {
     private func configureTableView() {
         tableView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
         tableView.register(CarListTableViewCell.self, forCellReuseIdentifier: CarListTableViewCell.identifier)
-        tableView.backgroundColor = .systemBackground
+        tableView.backgroundColor = .tertiarySystemBackground
         tableView.allowsMultipleSelection = false
         tableView.showsVerticalScrollIndicator = true
         tableView.rowHeight = UITableView.automaticDimension
@@ -85,8 +88,14 @@ class CarListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCar = presenter.availableCars[indexPath.row]
+        let carDetailsController = factory.makeCarDetailsViewController(with: selectedCar)
+        present(carDetailsController, animated: true, completion: nil)
+    }
 }
-// MARK: CarlistPresenter view
+// MARK: CarListPresenter view
 extension CarListViewController: CarListPresenterView {
 
     func applySnapshot(animatingDifferences: Bool) {

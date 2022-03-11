@@ -21,20 +21,15 @@ class RatingView: UIView {
     }
 
     private let ratingView = StarRatingView(starCount: 5, rating: 0)
-    private let reviewCountLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .label
-        label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
-        label.numberOfLines = 1
-        label.textAlignment = .left
-        return label
-    }()
+    private let reviewCountLabel = Label(font: UIFont.systemFont(ofSize: 14, weight: .regular))
     private let stackView = StackView(axis: .horizontal, spacing: 10)
 
     // MARK: Configure
-    func configure(with rating: Double, reviewCount: Int) {
+    func configure(with rating: Double, reviewCount: Int? = nil) {
         ratingView.updateView(rating: rating)
-        reviewCountLabel.text = "\(reviewCount) reviews"
+        if let reviewCount = reviewCount {
+            reviewCountLabel.text = "\(reviewCount)"
+        }
     }
 }
 // MARK: Constraints
@@ -47,7 +42,8 @@ extension RatingView {
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
 
-            ratingView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.3)
+            ratingView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.3),
+            ratingView.heightAnchor.constraint(equalToConstant: 16)
         ])
     }
 }
