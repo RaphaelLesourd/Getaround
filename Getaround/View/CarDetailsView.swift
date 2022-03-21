@@ -53,11 +53,11 @@ class CarDetailsView: UIView {
         button.tintColor = .systemBackground
         button.layer.cornerRadius = 22
         button.layer.masksToBounds = true
-        button.addTarget(self, action: #selector(closeControllerButtonAction), for: .touchUpInside)
+        button.addTarget(CarDetailsView.self, action: #selector(closeControllerButtonAction), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-
+    
     private let carImageView = ImageView(defaultImage: Images.Default.carImage)
     private let carInfosView = CarInfoView()
     private let carRatingView = RatingView()
